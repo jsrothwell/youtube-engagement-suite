@@ -1,0 +1,60 @@
+/* YouTube Engagement Suite - Block Editor Styles */
+
+.ytes-block-preview {
+    padding: 20px;
+    background: #f0f0f0;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.ytes-block-preview h3 {
+    margin-top: 0;
+}
+
+/* Subscribe Button Preview */
+.wp-block[data-type="ytes/subscribe-button"] .ytes-block-preview {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+/* Email Signup Preview */
+.wp-block[data-type="ytes/email-signup"] .ytes-block-preview {
+    background: #fff;
+}
+
+.wp-block[data-type="ytes/email-signup"] input,
+.wp-block[data-type="ytes/email-signup"] button {
+    pointer-events: none;
+}
+
+/* Social Share Preview */
+.wp-block[data-type="ytes/social-share"] .ytes-block-preview {
+    min-height: 60px;
+}
+
+/* CTA Button Preview */
+.wp-block[data-type="ytes/cta-button"] .ytes-block-preview {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.wp-block[data-type="ytes/cta-button"] button {
+    pointer-events: none;
+}
+
+/* Inspector Controls Styling */
+.components-panel__body-title {
+    font-weight: 600;
+}
+
+.components-base-control {
+    margin-bottom: 16px;
+}
+
+.components-base-control__label {
+    font-weight: 500;
+    margin-bottom: 8px;
+}

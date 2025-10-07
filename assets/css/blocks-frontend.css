@@ -1,0 +1,28 @@
+/* YouTube Engagement Suite - Block Frontend Styles */
+
+/* This file contains block-specific frontend styles */
+/* Most styles are in frontend.css, this is for block-only overrides */
+
+.wp-block-ytes-subscribe-button {
+    margin: 20px 0;
+}
+
+.wp-block-ytes-email-signup {
+    margin: 30px 0;
+}
+
+.wp-block-ytes-social-share {
+    margin: 20px 0;
+}
+
+.wp-block-ytes-cta-button {
+    margin: 30px 0;
+}
+
+/* Ensure blocks don't break layout */
+.wp-block-ytes-subscribe-button,
+.wp-block-ytes-email-signup,
+.wp-block-ytes-social-share,
+.wp-block-ytes-cta-button {
+    clear: both;
+}

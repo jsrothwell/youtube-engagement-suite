@@ -1,0 +1,393 @@
+/* YouTube Engagement Suite - Frontend Styles */
+
+/* Common Alignment Classes */
+.ytes-align-left {
+    text-align: left;
+}
+
+.ytes-align-center {
+    text-align: center;
+}
+
+.ytes-align-right {
+    text-align: right;
+}
+
+/* Subscribe Button */
+.ytes-subscribe-button {
+    margin: 20px 0;
+}
+
+.ytes-subscribe-button .g-ytsubscribe {
+    display: inline-block;
+}
+
+/* Email Signup Form */
+.ytes-email-signup {
+    margin: 30px 0;
+}
+
+.ytes-email-signup-inner {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    max-width: 500px;
+    display: inline-block;
+    width: 100%;
+}
+
+.ytes-email-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.ytes-email-description {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 16px;
+}
+
+.ytes-form-field {
+    margin-bottom: 15px;
+}
+
+.ytes-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.ytes-input:focus {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 3px rgba(0, 115, 170, 0.1);
+}
+
+.ytes-input-error {
+    border-color: #dc3232;
+}
+
+.ytes-input-error:focus {
+    box-shadow: 0 0 0 3px rgba(220, 50, 50, 0.1);
+}
+
+.ytes-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.ytes-button-primary {
+    background: #0073aa;
+    color: #fff;
+}
+
+.ytes-button-primary:hover {
+    background: #005a87;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ytes-button-primary:active {
+    transform: translateY(0);
+}
+
+.ytes-button-primary:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.ytes-form-message {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: none;
+}
+
+.ytes-form-message:not(:empty) {
+    display: block;
+}
+
+.ytes-form-message.ytes-success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.ytes-form-message.ytes-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Social Share Buttons */
+.ytes-social-share {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.ytes-social-share.ytes-layout-horizontal {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ytes-social-share.ytes-layout-vertical {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ytes-align-center .ytes-social-share {
+    justify-content: center;
+}
+
+.ytes-align-right .ytes-social-share {
+    justify-content: flex-end;
+}
+
+.ytes-align-center .ytes-social-share.ytes-layout-vertical {
+    align-items: center;
+}
+
+.ytes-align-right .ytes-social-share.ytes-layout-vertical {
+    align-items: flex-end;
+}
+
+.ytes-share-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.ytes-share-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: #fff;
+}
+
+.ytes-share-button:active {
+    transform: translateY(0);
+}
+
+/* Social Network Colors */
+.ytes-share-facebook {
+    background: #1877F2;
+}
+
+.ytes-share-twitter {
+    background: #1DA1F2;
+}
+
+.ytes-share-linkedin {
+    background: #0A66C2;
+}
+
+.ytes-share-pinterest {
+    background: #E60023;
+}
+
+.ytes-share-reddit {
+    background: #FF4500;
+}
+
+.ytes-share-whatsapp {
+    background: #25D366;
+}
+
+/* Share Button Sizes */
+.ytes-size-small .ytes-share-button {
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+.ytes-size-small .ytes-share-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.ytes-size-medium .ytes-share-button {
+    padding: 10px 16px;
+    font-size: 14px;
+}
+
+.ytes-size-medium .ytes-share-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.ytes-size-large .ytes-share-button {
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+.ytes-size-large .ytes-share-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.ytes-share-icon {
+    display: flex;
+    align-items: center;
+}
+
+.ytes-share-icon svg {
+    fill: currentColor;
+}
+
+/* CTA Button */
+.ytes-cta-button-wrapper {
+    margin: 30px 0;
+}
+
+.ytes-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.ytes-cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.ytes-cta-button:active {
+    transform: translateY(0);
+}
+
+.ytes-button-youtube {
+    background: #FF0000;
+    color: #fff;
+}
+
+.ytes-button-youtube:hover {
+    background: #CC0000;
+    color: #fff;
+}
+
+.ytes-button-secondary {
+    background: #666;
+    color: #fff;
+}
+
+.ytes-button-secondary:hover {
+    background: #444;
+    color: #fff;
+}
+
+/* Button Sizes */
+.ytes-button-small {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.ytes-button-medium {
+    padding: 14px 28px;
+    font-size: 16px;
+}
+
+.ytes-button-large {
+    padding: 18px 36px;
+    font-size: 20px;
+}
+
+.ytes-youtube-icon {
+    flex-shrink: 0;
+}
+
+/* Notification */
+.ytes-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 16px 24px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    opacity: 0;
+    transform: translateX(400px);
+    transition: all 0.3s ease;
+    max-width: 400px;
+}
+
+.ytes-notification-show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.ytes-notification-success {
+    background: #d4edda;
+    color: #155724;
+    border-left: 4px solid #28a745;
+}
+
+.ytes-notification-error {
+    background: #f8d7da;
+    color: #721c24;
+    border-left: 4px solid #dc3545;
+}
+
+.ytes-notification-info {
+    background: #d1ecf1;
+    color: #0c5460;
+    border-left: 4px solid #17a2b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ytes-email-signup-inner {
+        padding: 20px;
+    }
+    
+    .ytes-social-share.ytes-layout-horizontal {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .ytes-share-button {
+        justify-content: center;
+    }
+    
+    .ytes-notification {
+        right: 10px;
+        left: 10px;
+        max-width: none;
+    }
+    
+    .ytes-cta-button {
+        width: 100%;
+        justify-content: center;
+    }
+}

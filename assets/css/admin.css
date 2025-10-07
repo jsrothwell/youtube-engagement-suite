@@ -1,0 +1,106 @@
+/* YouTube Engagement Suite - Admin Styles */
+
+.ytes-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.ytes-stat-box {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.ytes-stat-box h3 {
+    margin: 0 0 10px 0;
+    font-size: 36px;
+    font-weight: 600;
+    color: #2271b1;
+}
+
+.ytes-stat-box p {
+    margin: 0;
+    color: #646970;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.ytes-admin-header {
+    background: #fff;
+    border-bottom: 1px solid #ccd0d4;
+    padding: 20px;
+    margin: 0 -20px 20px -20px;
+}
+
+.ytes-admin-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.form-table th {
+    padding: 20px 10px 20px 0;
+    font-weight: 600;
+}
+
+.form-table td {
+    padding: 15px 10px;
+}
+
+.form-table td input[type="text"],
+.form-table td input[type="email"] {
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-table td .description {
+    margin-top: 8px;
+    font-style: italic;
+    color: #646970;
+}
+
+.ytes-export-section {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #ccd0d4;
+}
+
+/* Table Styles */
+.wp-list-table.ytes-table {
+    margin-top: 20px;
+}
+
+.wp-list-table.ytes-table thead th,
+.wp-list-table.ytes-table tbody td {
+    padding: 12px;
+}
+
+.wp-list-table.ytes-table tbody tr:hover {
+    background: #f6f7f7;
+}
+
+/* Settings Sections */
+.ytes-settings-section {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.ytes-settings-section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccd0d4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ytes-stats {
+        grid-template-columns: 1fr;
+    }
+}
